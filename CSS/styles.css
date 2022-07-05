@@ -1,0 +1,230 @@
+*{
+	padding: 0;
+	margin: 0;
+	/* overflow: hidden; */
+	box-sizing: border-box;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+}
+html, body{
+	padding: 0;
+	margin: 0;
+	/* color: #DBDADA;
+	background-color: #404150;
+	font-family: sans-serif; */
+	/* max-width: 375px; */
+	/* scroll-behavior: smooth;
+	transition: color 0.5s, background-color 0.5s; */
+}
+
+body{
+    background-image: url('/Img/assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 24px;
+}
+
+h1{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+}
+
+h5{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+
+    color: #D0D6F9;
+}
+
+p{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    text-align: center;
+
+    color: #D0D6F9;
+}
+
+a{
+    text-decoration: none;
+    color: #D0D6F9;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 24px; */
+}
+
+.logo{
+    margin: 0 0 0 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url('/Img/assets/shared/logo.svg');
+    background-size: contain;
+    overflow: hidden;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-main-nav{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 68%;
+    /* backdrop-filter: blur(5px);
+    background-color: #0B0D17; */
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(41px);
+}
+
+.mobile-main-nav ul{
+    margin-top: 113px;
+    list-style: none;
+    padding-left: 32px;
+}
+
+.mobile-main-nav li{
+    display: block;
+    height: 31px;
+    line-height: 31px;
+}
+
+.mobile-main-nav li:nth-child(n+1):not(:last-child){
+    margin: 20px 0;
+}
+
+.mobile-main-nav li.active{
+    border-right: 4px solid white;
+}
+
+.mobile-main-nav li a{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.mobile-main-nav span{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-right: 11px;
+    display: inline-block;
+    width: 18px;
+    
+    color: #FFFFFF; 
+}
+
+.hamburger-container{
+    margin-right: 24px;
+}
+
+.toggle-menu{
+	width: 24px;
+    position: relative;
+    z-index: 99;
+}
+
+.toggle-menu input{
+	display: none;
+}
+
+.toggle-menu label{
+	display: block;
+	cursor: pointer;
+	width: 100%;
+}
+
+.toggle-menu span{
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: #D0D6F9;
+	transition: transform 0.3s;
+}
+
+.toggle-menu label span:nth-child(2){
+	margin: 6px 0;
+}
+
+.toggle-menu input:checked~label span:nth-child(1){
+	transform: translateY(9px) rotate(45deg); /*translateY(x), где х = margin+span height*/
+}
+
+.toggle-menu input:checked~label span:nth-child(2){
+	transform: rotate(45deg);
+}
+
+.toggle-menu input:checked~label span:nth-child(3){
+	transform: translateY(-9px) rotate(-45deg);
+}
+
+.text-container{
+    color: #D0D6F9;
+    text-align: center;
+    margin: 48px 24px 0;
+}
+
+.text-container h1{
+    color: white;
+    margin: 16px 0;
+}
+
+.explore{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 80px auto 0;
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore span{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 1.25px;
+
+    color: #0B0D17;
+}
