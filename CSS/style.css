@@ -107,6 +107,7 @@ img{
 .mobile-main-nav{
     /* display: none; */
     position: fixed;
+    z-index: 3;
     top: 0;
     right: 0;
     height: 100vh;
@@ -523,5 +524,122 @@ img{
 .crew-member-2,
 .crew-member-3,
 .crew-member-4{
+    display: none;
+}
+
+/* technology.html */
+
+.background-technology-mobile{
+    background-image: url('/Img/assets/technology/background-technology-mobile.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.technology-img-1{
+    width: 100%;
+    height: 45.31vw;
+    margin-top: 32px;
+
+    background-image: url('/Img/assets/technology/image-launch-vehicle-landscape.jpg');
+    background-size: cover;
+}
+
+.technology-img-2{
+    width: 100%;
+    height: 45.31vw;
+    margin-top: 32px;
+
+    background-image: url('/Img/assets/technology/image-spaceport-landscape.jpg');
+    background-size: cover;
+}
+
+.technology-img-3{
+    width: 100%;
+    height: 45.31vw;
+    margin-top: 32px;
+
+    background-image: url('/Img/assets/technology/image-space-capsule-landscape.jpg');
+    background-size: cover;
+}
+
+.technology-menu{
+    width: 152px;
+    height: 40px;
+
+    margin: 34px auto 0;
+}
+
+.technology-menu ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technology-menu li{
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #ffffff40;
+    border-radius: 50%;
+    background: transparent;
+    mix-blend-mode: normal;
+}
+
+.technology-menu li a{
+    color: #fff;
+}
+
+.technology-menu li.active{
+    background-color: #fff;
+}
+
+.technology-menu li.active a{
+    color: #0B0D17;
+}
+
+.technology-header-4{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 26px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 2.3625px;
+
+    color: #D0D6F9;
+
+}
+
+.smaller-technology-container{
+    width: 87.2%;
+    margin: 9px auto 0;
+}
+
+.smaller-technology-container h3{
+    font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+margin-bottom: 16px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.item-2,
+.item-3{
     display: none;
 }
