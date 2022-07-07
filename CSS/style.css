@@ -355,6 +355,10 @@ img{
     background: #383B4B;
 }
 
+.information-container{
+    margin-bottom: 58px;
+}
+
 .distance,
 .time-of-travel{
     margin-top: 32px;
@@ -409,7 +413,7 @@ img{
 
 .crew-member-container{
     width: 87.2%;
-    margin: 32px auto 0;
+    margin: 32px auto 50px;
 }
 
 .crew-member-1-pic{
@@ -621,7 +625,7 @@ img{
 
 .smaller-technology-container{
     width: 87.2%;
-    margin: 9px auto 0;
+    margin: 9px auto 81px;
 }
 
 .smaller-technology-container h3{
