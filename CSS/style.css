@@ -397,3 +397,131 @@ img{
 .destination-europa{
     display: none;
 }
+
+/* crew.html */
+
+.background-crew-mobile{
+    background-image: url('/Img/assets/crew/background-crew-mobile.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.crew-member-container{
+    width: 87.2%;
+    margin: 32px auto 0;
+}
+
+.crew-member-1-pic{
+    height: 222px;
+    margin: 0 auto;
+
+    background-image: url('/Img/assets/crew/image-douglas-hurley.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.crew-member-2-pic{
+    height: 222px;
+    margin: 0 auto;
+    
+    background-image: url('/Img/assets/crew/image-mark-shuttleworth.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.crew-member-3-pic{
+    height: 222px;
+    margin: 0 auto;
+    
+    background-image: url('/Img/assets/crew/image-victor-glover.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.crew-member-4-pic{
+    height: 222px;
+    margin: 0 auto;
+    
+    background-image: url('/Img/assets/crew/image-anousheh-ansari.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.additional-positioning{
+    transform: translateX(6px);
+}
+
+.decor-line-restyle{
+    margin: 0 auto;
+    width: 87.2%;
+}
+
+.crew-menu{
+    width: 88px;
+    height: 10px;
+
+    margin: 32px auto 0;
+}
+
+.crew-menu ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crew-menu li{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+}
+
+.crew-menu li.active{
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.crew-member-container h4{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.crew-member-container h3{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.crew-member-2,
+.crew-member-3,
+.crew-member-4{
+    display: none;
+}
