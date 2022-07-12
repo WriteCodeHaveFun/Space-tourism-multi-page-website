@@ -106,7 +106,7 @@ img{
 
 .mobile-main-nav{
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     top: 0;
     right: 0;
     height: 100vh;
@@ -270,6 +270,25 @@ img{
     color: white;
 }
 
+.planets-imgs-container{
+    margin-top: 32px;
+    position: relative;
+    height: 170px
+}
+
+.planet-img{
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+
+    transition: transform 0.5s;
+}
+
+.planet-img.show{
+    transform: scale(1);
+    z-index: 5;
+}
+
 .content-page-settings span{
     font-family: 'Barlow Condensed';
     font-style: normal;
@@ -288,7 +307,7 @@ img{
 .img-container-mobile{
     width: 170px;
     height: 170px;
-    margin: 32px auto 0;
+    margin: 0 auto;
 }
 
 .container{
@@ -298,9 +317,8 @@ img{
 
 .destination-menu{
     text-transform: uppercase;
-    text-transform: uppercase;
-    width: 72.5%;
-    margin: 0 auto;
+    width: 63.2%;
+    margin: 26px auto 0;
 }
 
 .destination-menu ul{
@@ -332,6 +350,8 @@ img{
     background-color: transparent;
     margin: -3px auto 0;
     pointer-events: none;
+
+    transition: background-color 0.3s;
 }
 
 /* .destination-menu li.active a{
@@ -399,11 +419,24 @@ img{
 
     color: #FFFFFF;
 }
-
-.destination-moon, 
-.destination-mars, 
-.destination-europa{
+ 
+/* .destination-mars:not(.planet-img), 
+.destination-europa:not(.planet-img),
+.destination-titan:not(.planet-img){
     display: none;
+} */
+
+.destination-info{
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+
+    transition: opacity 0.5s;
+}
+
+.destination-info.show{
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* crew.html */
@@ -416,7 +449,7 @@ img{
 
 .crew-member-container{
     width: 87.2%;
-    margin: 32px auto 50px;
+    margin: 32px auto 0;
 }
 
 .crew-member-1-pic{
