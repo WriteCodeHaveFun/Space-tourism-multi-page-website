@@ -119,6 +119,10 @@ img{
     transition: transform 0.2s;
 }
 
+.tablet-main-nav{
+    display: none;
+}
+
 .mobile-main-nav ul{
     margin-top: 113px;
     list-style: none;
@@ -258,7 +262,7 @@ img{
 
 /* destination.html */
 
-.background-destination-mobile{
+.background-destination{
     background-image: url('/Img/assets/destination/background-destination-mobile.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -441,7 +445,7 @@ img{
 
 /* crew.html */
 
-.background-crew-mobile{
+.background-crew{
     background-image: url('/Img/assets/crew/background-crew-mobile.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -524,7 +528,10 @@ img{
     transition: transform 0.5s;
 }
 
-.crew-member-1-pic.show,
+.crew-member-1-pic.show{
+    transform: scale(1) translateX(6px);
+    z-index: 4;
+}
 .crew-member-2-pic.show,
 .crew-member-3-pic.show,
 .crew-member-4-pic.show{
@@ -633,7 +640,7 @@ img{
 
 /* technology.html */
 
-.background-technology-mobile{
+.background-technology{
     background-image: url('/Img/assets/technology/background-technology-mobile.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -789,3 +796,63 @@ color: #FFFFFF;
 /* [data-toggle-menu]{
     background-color: #0B0D17;
 } */
+
+@media (min-width: 768px){
+    .background-home{
+        background-image: url('/Img/assets/home/background-home-tablet.jpg');
+    }
+    .main-header{
+        padding: 0;
+        align-items: unset;
+    }
+    .logo{
+        width: 48px;
+        height: 48px;
+        margin: 24px 0 0 39px;
+    }
+    .hamburger-container, .mobile-main-nav{
+        display: none;
+    }
+    .tablet-main-nav{
+        display: block;
+        width: 450px;
+        height: 96px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+    }
+    .tablet-main-nav ul{
+        list-style: none;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 46px 0 48px;
+    }
+    .tablet-main-nav li{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
+    }
+
+    .tablet-main-nav li.active{
+        border-bottom: 3px solid #fff;
+    }
+
+    .tablet-main-nav a{
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        letter-spacing: 2.3625px;
+
+        color: #FFFFFF;
+    }
+}
