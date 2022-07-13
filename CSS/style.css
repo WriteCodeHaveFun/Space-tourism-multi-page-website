@@ -447,8 +447,23 @@ img{
     background-size: cover;
 }
 
+/* .crew-flex-container{
+    display: flex;
+    width: 400%;
+}
+
+.crew-flex-container .show:nth-child(1){
+    transform: translateX(0);
+}
+
+.crew-flex-container .show:nth-child(2){
+    transform: translateX(25%);
+} */
+
 .crew-member-container{
+    position: relative;
     width: 87.2%;
+    height: 222px;
     margin: 32px auto 0;
 }
 
@@ -460,6 +475,8 @@ img{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    transform: scale(0) translateX(6px);
 }
 
 .crew-member-2-pic{
@@ -470,6 +487,8 @@ img{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    transform: scale(0);
 }
 
 .crew-member-3-pic{
@@ -480,6 +499,8 @@ img{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    transform: scale(0);
 }
 
 .crew-member-4-pic{
@@ -490,11 +511,30 @@ img{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    transform: scale(0);
 }
 
-.additional-positioning{
-    transform: translateX(6px);
+.crew-member-1-pic,
+.crew-member-2-pic,
+.crew-member-3-pic,
+.crew-member-4-pic{
+    position: absolute;
+    width: 100%;
+    transition: transform 0.5s;
 }
+
+.crew-member-1-pic.show,
+.crew-member-2-pic.show,
+.crew-member-3-pic.show,
+.crew-member-4-pic.show{
+    transform: scale(1);
+    z-index: 4;
+}
+
+/* .additional-positioning{
+    transform: translateX(6px);
+} */
 
 .decor-line-restyle{
     margin: 0 auto;
@@ -523,6 +563,8 @@ img{
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.17;
+
+    transition: opacity 0.5s;
 }
 
 .crew-menu li.active{
@@ -530,7 +572,29 @@ img{
     opacity: 1;
 }
 
-.crew-member-container h4{
+.crew-info-container{
+    position: relative;
+    width: 87.2%;
+    height: 222px;
+    margin: 32px auto 58px;
+}
+
+.crew-info{
+    position: absolute;
+    /* width: 87.2%;
+    height: 222px;
+    margin: 32px auto 0; */
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s;
+}
+
+.crew-info.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.crew-info h4{
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
@@ -546,7 +610,7 @@ img{
     opacity: 0.5;
 }
 
-.crew-member-container h3{
+.crew-info h3{
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
@@ -561,11 +625,11 @@ img{
     color: #FFFFFF;
 }
 
-.crew-member-2,
+/* .crew-member-2,
 .crew-member-3,
 .crew-member-4{
     display: none;
-}
+} */
 
 /* technology.html */
 
@@ -575,10 +639,27 @@ img{
     background-size: cover;
 }
 
+.technology-container{
+    position: relative;
+    height: 170px;
+    margin-top: 32px;
+}
+
+.technology-img{
+    position: absolute;
+    opacity: 0;
+
+    transition: opacity 0.5s;
+}
+
+.technology-img.show{
+    opacity: 1;
+}
+
 .technology-img-1{
     width: 100%;
     height: 45.31vw;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 
     background-image: url('/Img/assets/technology/image-launch-vehicle-landscape.jpg');
     background-size: cover;
@@ -587,7 +668,7 @@ img{
 .technology-img-2{
     width: 100%;
     height: 45.31vw;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 
     background-image: url('/Img/assets/technology/image-spaceport-landscape.jpg');
     background-size: cover;
@@ -596,7 +677,7 @@ img{
 .technology-img-3{
     width: 100%;
     height: 45.31vw;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 
     background-image: url('/Img/assets/technology/image-space-capsule-landscape.jpg');
     background-size: cover;
@@ -629,10 +710,14 @@ img{
     border-radius: 50%;
     background: transparent;
     mix-blend-mode: normal;
+
+    transition: background-color 0.5s;
 }
 
 .technology-menu li a{
     color: #fff;
+
+    transition: color 0.5s;
 }
 
 .technology-menu li.active{
@@ -659,9 +744,26 @@ img{
 
 }
 
-.smaller-technology-container{
+.technology-info-container{
+    position: relative;
     width: 87.2%;
+    min-height: 194px;
     margin: 9px auto 81px;
+}
+
+.smaller-technology-container{
+    /* width: 87.2%;
+    margin: 9px auto 81px; */
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+
+    transition: opacity 0.5s;
+}
+
+.smaller-technology-container.show{
+    opacity: 1;
+    transform: scale(1);
 }
 
 .smaller-technology-container h3{
@@ -679,10 +781,10 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.item-2,
+/* .item-2,
 .item-3{
     display: none;
-}
+} */
 
 /* [data-toggle-menu]{
     background-color: #0B0D17;
