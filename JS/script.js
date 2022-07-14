@@ -1,8 +1,10 @@
 let menuToggler = document.querySelector('[data-toggle-menu]');
 let inPageNav = document.querySelector('[data-in-page-nav]');
+let inPageTabletNav = document.querySelector('[data-in-page-tablet-nav]');
 
 if (menuToggler) menuToggler.addEventListener('click', toggleMenu);
 if (inPageNav) inPageNav.addEventListener('click', inPageNavigation);
+if (inPageTabletNav) inPageTabletNav.addEventListener('click', inPageNavigation);
 window.addEventListener('unload', clearInputCheckboxes);
 
 

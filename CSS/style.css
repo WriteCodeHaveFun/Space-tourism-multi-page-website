@@ -432,6 +432,7 @@ img{
 
 .destination-info{
     position: absolute;
+    width: 100%;
     opacity: 0;
     transform: scale(0);
 
@@ -464,6 +465,10 @@ img{
     transform: translateX(25%);
 } */
 
+.crew-tablet-container{
+    display: none;
+}
+
 .crew-member-container{
     position: relative;
     width: 87.2%;
@@ -472,7 +477,7 @@ img{
 }
 
 .crew-member-1-pic{
-    height: 222px;
+    height: 100%;
     margin: 0 auto;
 
     background-image: url('/Img/assets/crew/image-douglas-hurley.webp');
@@ -484,7 +489,7 @@ img{
 }
 
 .crew-member-2-pic{
-    height: 222px;
+    height: 100%;
     margin: 0 auto;
     
     background-image: url('/Img/assets/crew/image-mark-shuttleworth.webp');
@@ -496,7 +501,7 @@ img{
 }
 
 .crew-member-3-pic{
-    height: 222px;
+    height: 100%;
     margin: 0 auto;
     
     background-image: url('/Img/assets/crew/image-victor-glover.webp');
@@ -508,7 +513,7 @@ img{
 }
 
 .crew-member-4-pic{
-    height: 222px;
+    height: 100%;
     margin: 0 auto;
     
     background-image: url('/Img/assets/crew/image-anousheh-ansari.webp');
@@ -648,7 +653,7 @@ img{
 
 .technology-container{
     position: relative;
-    height: 170px;
+    height: 45.31vw;
     margin-top: 32px;
 }
 
@@ -665,7 +670,7 @@ img{
 
 .technology-img-1{
     width: 100%;
-    height: 45.31vw;
+    height: 100%;
     /* margin-top: 32px; */
 
     background-image: url('/Img/assets/technology/image-launch-vehicle-landscape.jpg');
@@ -674,7 +679,7 @@ img{
 
 .technology-img-2{
     width: 100%;
-    height: 45.31vw;
+    height: 100%;
     /* margin-top: 32px; */
 
     background-image: url('/Img/assets/technology/image-spaceport-landscape.jpg');
@@ -683,7 +688,7 @@ img{
 
 .technology-img-3{
     width: 100%;
-    height: 45.31vw;
+    height: 100%;
     /* margin-top: 32px; */
 
     background-image: url('/Img/assets/technology/image-space-capsule-landscape.jpg');
@@ -722,6 +727,14 @@ img{
 }
 
 .technology-menu li a{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0px;
+
     color: #fff;
 
     transition: color 0.5s;
@@ -854,5 +867,191 @@ color: #FFFFFF;
         letter-spacing: 2.3625px;
 
         color: #FFFFFF;
+    }
+    .text-container {
+        color: #D0D6F9;
+        text-align: center;
+        margin: 106px auto 0;
+        width: 58.6%;
+    }
+    h5{
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        letter-spacing: 3.375px;
+    }
+    h1{
+        font-size: 150px;
+        line-height: 150px;
+    }
+    .text-container h1 {
+        margin: 24px 0;
+    }
+    p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .explore{
+        margin: 156px auto 0;
+        width: 242px;
+        height: 242px;
+    }
+    .explore span{
+        font-size: 32px;
+        line-height: 37px;
+        /* identical to box height */
+
+        letter-spacing: 2px;
+    }
+
+    /* destination.html */
+
+    .background-destination{
+        background-image: url('/Img/assets/destination/background-destination-tablet.jpg');
+    }
+
+    .content-page-settings{
+        margin-top: 40px;
+        text-align: left;
+        padding-left: 38.5px;
+    }
+    .content-page-settings span{
+        font-size: 20px;
+        line-height: 24px;
+        padding-right: 19px;
+        /* identical to box height */
+
+        letter-spacing: 3.375px;
+    }
+    .planets-imgs-container {
+        margin-top: 60px;
+        position: relative;
+        height: 300px;
+    }
+    .img-container-mobile {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .destination-menu {
+        text-transform: uppercase;
+        width: 37.2%;
+        margin: 53px auto 0;
+    }
+    .destination-menu a{
+        height: 34px;
+
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+
+        border-bottom: 3px solid transparent;
+        transition: border-color 0.3s;
+    }
+    .destination-menu li.active a{
+        border-bottom: 3px solid #fff;
+    }
+    .destination-menu li div {
+        display: none;
+    }
+    h2{
+        font-size: 80px;
+        line-height: 92px;
+    }
+    .container{
+        margin-top: 32px;
+        width: 74.6%;
+    }
+    .container h2{
+        margin-bottom: 8px;
+    }
+    .decoration-line{
+        margin-top: 49px;
+    }
+    .information-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .distance, 
+    .time-of-travel{
+        margin-top: 28px;
+    }
+
+    /* crew.html */
+
+    .background-crew{
+        background-image: url('/Img/assets/crew/background-crew-tablet.jpg');
+    }
+    .crew-mobile-container{
+        display: none;
+    }
+    .crew-tablet-container{
+        display: block;
+    }
+    .crew-info-container{
+        width: 59.7%;
+        height: 182px;
+        margin: 60px auto 40px;
+    }
+    .crew-info h4{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .crew-info h3{
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .crew-menu{
+        margin-top: 40px;
+    }
+    .crew-member-container{
+        margin-top: 40px;
+        width: 59.7%;
+        height: 572px;
+    }
+
+    /* technology.html */
+
+    .background-technology{
+        background-image: url('/Img/assets/technology/background-technology-tablet.jpg');
+    }
+    .technology-container{
+        margin-top: 60px;
+        height: 40.4vw;
+        overflow: hidden;
+    }
+    .technology-img-1{
+        width: 101%;
+    }
+    .technology-menu{
+        width: 210px;
+        height: 60px;
+        margin-top: 56px;
+    }
+    .technology-menu li{
+        width: 60px;
+        height: 60px;
+    }
+    .technology-menu li a{
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height */
+
+        text-align: center;
+    }
+    .technology-header-4{
+        margin-top: 44px;
+
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+    .technology-info-container{
+        margin-top: 16px;
+        width: 59.7%;
+    }
+    .smaller-technology-container h3{
+        font-size: 40px;
+        line-height: 46px;
     }
 }
