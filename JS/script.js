@@ -30,7 +30,7 @@ function inPageNavigation(e){
     }
 
     if(!elemsToShow.length) return;
-    elemsToHide = document.querySelectorAll('[data-in-page-nav-id].show');
+    let elemsToHide = document.querySelectorAll('[data-in-page-nav-id].show');
     elemsToHide.forEach(elem => elem.classList.remove('show'));
 
     elemsToShow.forEach(elem => elem.classList.add('show'));
