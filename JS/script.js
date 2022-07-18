@@ -18,6 +18,7 @@ function toggleMenu(e){
 function inPageNavigation(e){
     if(!e.target.closest('li')) return;
     if(e.target.closest('li').classList.contains('active')) return;
+    e.preventDefault();
     let navigationList = e.target.closest('ul').querySelectorAll('li');
     let elemsToShow;
 
