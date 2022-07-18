@@ -1411,6 +1411,6 @@ color: #FFFFFF;
 
 @supports not (backdrop-filter: blur(1px)) {
     .mobile-main-nav{
-        background-color: #0B0D17;
+        background-color: #0B0D1780;
     }
 }
