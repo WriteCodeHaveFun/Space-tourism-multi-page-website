@@ -80,7 +80,7 @@ img{
 }
 
 .background-home{
-    background-image: url('/Img/assets/home/background-home-mobile.jpg');
+    background-image: url('../Img/assets/home/background-home-mobile.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -100,7 +100,7 @@ img{
     height: 40px;
     border-radius: 50%;
     background-color: white;
-    background-image: url('/Img/assets/shared/logo.svg');
+    background-image: url('../Img/assets/shared/logo.svg');
     background-size: contain;
     overflow: hidden;
 }
@@ -274,7 +274,7 @@ img{
 /* destination.html */
 
 .background-destination{
-    background-image: url('/Img/assets/destination/background-destination-mobile.jpg');
+    background-image: url('../Img/assets/destination/background-destination-mobile.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -458,7 +458,7 @@ img{
 /* crew.html */
 
 .background-crew{
-    background-image: url('/Img/assets/crew/background-crew-mobile.jpg');
+    background-image: url('../Img/assets/crew/background-crew-mobile.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -491,7 +491,7 @@ img{
     height: 100%;
     margin: 0 auto;
 
-    background-image: url('/Img/assets/crew/image-douglas-hurley.webp');
+    background-image: url('../Img/assets/crew/image-douglas-hurley.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -503,7 +503,7 @@ img{
     height: 100%;
     margin: 0 auto;
     
-    background-image: url('/Img/assets/crew/image-mark-shuttleworth.webp');
+    background-image: url('../Img/assets/crew/image-mark-shuttleworth.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -515,7 +515,7 @@ img{
     height: 100%;
     margin: 0 auto;
     
-    background-image: url('/Img/assets/crew/image-victor-glover.webp');
+    background-image: url('../Img/assets/crew/image-victor-glover.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -527,7 +527,7 @@ img{
     height: 100%;
     margin: 0 auto;
     
-    background-image: url('/Img/assets/crew/image-anousheh-ansari.webp');
+    background-image: url('../Img/assets/crew/image-anousheh-ansari.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -660,7 +660,7 @@ img{
 /* technology.html */
 
 .background-technology{
-    background-image: url('/Img/assets/technology/background-technology-mobile.jpg');
+    background-image: url('../Img/assets/technology/background-technology-mobile.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -691,7 +691,7 @@ img{
     height: 100%;
     /* margin-top: 32px; */
 
-    background-image: url('/Img/assets/technology/image-launch-vehicle-landscape.jpg');
+    background-image: url('../Img/assets/technology/image-launch-vehicle-landscape.jpg');
     background-size: cover;
 }
 
@@ -700,7 +700,7 @@ img{
     height: 100%;
     /* margin-top: 32px; */
 
-    background-image: url('/Img/assets/technology/image-spaceport-landscape.jpg');
+    background-image: url('../Img/assets/technology/image-spaceport-landscape.jpg');
     background-size: cover;
 }
 
@@ -709,7 +709,7 @@ img{
     height: 100%;
     /* margin-top: 32px; */
 
-    background-image: url('/Img/assets/technology/image-space-capsule-landscape.jpg');
+    background-image: url('../Img/assets/technology/image-space-capsule-landscape.jpg');
     background-size: cover;
 }
 
@@ -830,7 +830,7 @@ color: #FFFFFF;
 
 @media (min-width: 768px){
     .background-home{
-        background-image: url('/Img/assets/home/background-home-tablet.jpg');
+        background-image: url('../Img/assets/home/background-home-tablet.jpg');
     }
     .main-header{
         padding: 0;
@@ -925,7 +925,7 @@ color: #FFFFFF;
     /* destination.html */
 
     .background-destination{
-        background-image: url('/Img/assets/destination/background-destination-tablet.jpg');
+        background-image: url('../Img/assets/destination/background-destination-tablet.jpg');
     }
 
     .content-page-settings{
@@ -1001,7 +1001,7 @@ color: #FFFFFF;
     /* crew.html */
 
     .background-crew{
-        background-image: url('/Img/assets/crew/background-crew-tablet.jpg');
+        background-image: url('../Img/assets/crew/background-crew-tablet.jpg');
     }
     .crew-mobile-container{
         display: none;
@@ -1034,7 +1034,7 @@ color: #FFFFFF;
     /* technology.html */
 
     .background-technology{
-        background-image: url('/Img/assets/technology/background-technology-tablet.jpg');
+        background-image: url('../Img/assets/technology/background-technology-tablet.jpg');
     }
     .technology-container{
         margin-top: 60px;
@@ -1079,7 +1079,7 @@ color: #FFFFFF;
 
 @media (min-width: 1440px){
     .background-home{
-        background-image: url('/Img/assets/home/background-home-desktop.jpg');
+        background-image: url('../Img/assets/home/background-home-desktop.jpg');
     }
     .logo{
         margin: 64px 0 0 55px;
@@ -1194,7 +1194,7 @@ color: #FFFFFF;
 
     /* destination.html */
     .background-destination{
-        background-image: url('/Img/assets/destination/background-destination-desktop.jpg');
+        background-image: url('../Img/assets/destination/background-destination-desktop.jpg');
     }
     .content-page-settings{
         margin-top: 76px;
@@ -1275,7 +1275,7 @@ color: #FFFFFF;
     /* crew.html */
 
     .background-crew{
-        background-image: url('/Img/assets/crew/background-crew-desktop.jpg');
+        background-image: url('../Img/assets/crew/background-crew-desktop.jpg');
     }
     .crew-desktop-container{
         width: 42.64%;
@@ -1329,7 +1329,7 @@ color: #FFFFFF;
     /* technology.html */
 
     .background-technology{
-        background-image: url('/Img/assets/technology/background-technology-desktop.jpg');
+        background-image: url('../Img/assets/technology/background-technology-desktop.jpg');
     }
     .desktop-version{
         display: block;
@@ -1399,13 +1399,13 @@ color: #FFFFFF;
         height: 36.6vw;
     }
     .technology-img-1{
-        background-image: url('/Img/assets/technology/image-launch-vehicle-portrait.jpg');
+        background-image: url('../Img/assets/technology/image-launch-vehicle-portrait.jpg');
     }
     .technology-img-2{
-        background-image: url('/Img/assets/technology/image-spaceport-portrait.jpg');
+        background-image: url('../Img/assets/technology/image-spaceport-portrait.jpg');
     }
     .technology-img-3{
-        background-image: url('/Img/assets/technology/image-space-capsule-portrait.jpg');
+        background-image: url('../Img/assets/technology/image-space-capsule-portrait.jpg');
     }
 }
 
