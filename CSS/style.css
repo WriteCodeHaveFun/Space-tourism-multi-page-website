@@ -76,6 +76,7 @@ a{
 img{
     height: 100%;
     width: 100%;
+    color: #fff;
 }
 
 .background-home{
@@ -1156,6 +1157,7 @@ color: #FFFFFF;
     .desktop-flex-container{
         display: flex;
         margin: 251px 0 131px 0;
+        justify-content: space-between;
     }
     .desktop-flex-container .text-container{
         margin: 0 0 0 165px;
@@ -1181,7 +1183,7 @@ color: #FFFFFF;
     .explore{
         width: 274px;
         height: 274px;
-        margin: 108px 0 0 386px;
+        margin: 108px 165px 0 386px;
         outline: 0px solid #ffffff1a;
 
         transition: outline-width 0.3s;
@@ -1215,6 +1217,7 @@ color: #FFFFFF;
     .desktop-flex-container-destination-page{
         display: flex;
         margin-top: 64px;
+        margin-bottom: 118px;
     }
     .planets-imgs-container{
         height: 445px;
@@ -1403,5 +1406,11 @@ color: #FFFFFF;
     }
     .technology-img-3{
         background-image: url('/Img/assets/technology/image-space-capsule-portrait.jpg');
+    }
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+    .mobile-main-nav{
+        background-color: #0B0D17;
     }
 }
